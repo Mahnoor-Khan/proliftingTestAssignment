@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./prolisting.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="./assets/logo.png.png"/>
+        <div class="menuDiv">
+        <ul class="menuItems">
+            <li class="home" >HOME <i class="fa fa-chevron-down downArrow"></i>
+                <div class="dropdownList homeDropdown check" id="homeDropdown">
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i> HOME 1</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>HOME 2</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>HOME 3</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>HOME 4</a>
+                </div>
+            </li>
+            <li class="listing">LISTINGS <i class="fa fa-chevron-down downArrow"></i>
+                <div class="dropdownList listingDropdown check" id="listingsDropdown">
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Column Listings</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Column Listings 2</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Left Sidebar List</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Right Sidebar List</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Listing List View</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Map Listing 1</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Map Listing 2</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Map Listing 3</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>List Details</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>List Details 2</a>
+                </div>
+            </li>
+            <li class="pages">PAGES <i class="fa fa-chevron-down downArrow" ></i>
+                <div class="dropdownList pagesDropdown check" id="pagesDropdown">
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i> My Listings</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Add Listings</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Edit Profile</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Register</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Sign In</a>
+                </div>
+            </li>
+            <li class="extras">EXTRAS <i class="fa fa-chevron-down downArrow"></i>
+                <div class="dropdownList extrasDropdown check" id="extrasDropdown">
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Error 404</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Blog</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Blog 2</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Blog Detail</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>FAQ's</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>How it works</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Pricings</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Terms & Condition</a>
+                </div>
+            </li>
+            <li class="shop">SHOP <i class="fa fa-chevron-down downArrow"></i>
+                <div class="dropdownList shopDropdown check" id="shopDropdown">
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i> Shop</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Cart</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Checkout</a>
+                    <a class="innerDropDownItems" href=""><i class="fa fa-chevron-right rightArrow"></i>Shop Detail</a>
+                </div>
+            </li>
+            <li>CONTACT US</li>
+        </ul>
+        <i class="fa fa-search searchIcon"></i>
+        <button class="addListBtn">
+            <i class="fa fa-plus"></i>Add Your Listing
+        </button>
+        <div class="regAndLogin"><span>REGISTER</span>/ <span>LOGIN</span></div>
+        <select class="countrySelect">
+            <option value="1">EN</option>
+            <option value="2">TK</option>
+            <option value="3">RA</option>
+            <option value="4">PK</option>
+        </select>
+    </div>
+    </nav>
+    <header>
+        <img class="respLogo" src='./assets/logo.png.png'/>
+        <span class="menuBars"><i class="fa fa-bars bars" ></i></span>
+        <div class="btnsSection">
+            <i class="fa fa-search headerSearchIcon"></i>
+            <button class="addListBtn">
+                <i class="fa fa-plus"></i>Add Your Listing
+            </button>
+            <div class="accountBtnSection">
+                <span>REGISTER</span>/ <span>LOGIN</span>
+            </div>
+        </div>
+    </header>
+    <div class="heroSection">
+        <div id="slider">
+            <figure>
+            <img src="./assets/img-1.png" alt>
+            <img src="./assets/img-2.png" alt>
+            <img src="./assets/img-3.png" alt>
+            <img src="./assets/img-4.png" alt>
+            <img src="./assets/img-5.png" alt>
+            <img src="./assets/img-6.png" alt>
+            </figure>
+            </div>
+        <div class="heroHeading">
+        <h1>FIND THE BEST PLACES TO BE</h1>
+        <p>
+            All the top locations – from restaurants and clubs, to cinemas, galleries, and more.
+        </p>
+    </div>
+        
+    <div class="herolistSection">
+        <ul class="heroList">
+            <li class="keyworkLi">Keywords</li>
+            <li class="locationList">
+                <select class="heroSelect">
+                    <option href="">All Locations</option>
+                    <option href="">United States</option>
+                    <option href="">United Kingdom</option>
+                    <option href="">Afghanistan</option>
+                    <option href="">Aland Island</option>
+                    <option href="">Albania</option>
+                </select>
+            </li>   
+            <li class="selectList">
+                <select class="heroSelect">
+                    <option href="">All Categories</option>
+                    <option href="">Foods</option>
+                    <option href="">Lodging</option>
+                    <option href="">Nightlife</option>
+                    <option href="">Outdoors</option>
+                    <option href="">Restraunts</option>
+                </select>
+            </li>  
+            <li class="btnListItem"><button class="searchBtn"><i class="fa fa-search searchBtnIcon"></i>SEARCH</button></li> 
+        </ul>
+    </div>
+    </div>
+</body>
+</html>

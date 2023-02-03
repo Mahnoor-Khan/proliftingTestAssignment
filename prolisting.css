@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Roboto:wght@100;300;400&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0rem;
+    width: 100%;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 70px;
+    justify-content: space-between;
+    padding: 2.5rem;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid rgba(141, 153, 174, 0.5);
+}
+
+.menuBars {
+    float: right;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding: 0.8rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    font-size: 2.0rem;
+    color: rgb(160, 158, 158);
+    background-color: white;
+    border-radius: 2px;
+}
+
+.respLogo {
+    float: left;
+    padding: 20px 30px;
+    width: auto;
+    width: 129px;
+}
+
+.accountBtnSection {
+    padding: 10px 0;
+    margin-left: 0px;
+    padding: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.downArrow {
+    margin-left: 0.5rem;
+    font-size: 1.0rem !important;
+}
+
+.dropdownList {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.377);
+    border-radius: 8px;
+    z-index: 1;
+    background-color: #00171f;
+    color: white;
+
+}
+
+.dropdownList ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home:hover .homeDropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 2.0rem;
+    z-index: 9;
+    margin-top: 4.0rem;
+}
+
+.innerDropDownItems {
+    color: white;
+    text-decoration: none;
+    padding: 1.0rem;
+    color: #777777;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.rightArrow {
+    margin-right: 0.8rem !important;
+}
+
+/* .check {
+    flex-direction: column;
+    padding: 2.0rem;
+    margin-top: 4.0rem;
+    z-index: 9;
+} */
+
+.listing:hover .listingDropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 2.0rem;
+    margin-top: 4.0rem;
+    z-index: 9;
+}
+
+.pages:hover .pagesDropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 2.0rem;
+    margin-top: 4.0rem;
+    z-index: 9;
+}
+
+.extras:hover .extrasDropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 2.0rem;
+    z-index: 9;
+    margin-top: 4.0rem;
+}
+
+.shop:hover .shopDropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 2.0rem;
+    z-index: 9;
+    margin-top: 4.0rem;
+}
+
+.shopDropdown:hover .shopDropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 2.0rem;
+}
+
+.dropdownList::before {
+    background: #00171f none repeat scroll 0 0;
+    content: "";
+    height: 20px;
+    left: 50px;
+    position: absolute;
+    top: -6px;
+    transform: rotate(45deg);
+    width: 20px;
+}
+
+
+.headerSearchIcon {
+    color: white;
+    font-size: 3.0rem !important;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+header {
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width:767px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        display: block;
+        box-sizing: border-box;
+        background-color: black;
+        height: 16.14rem;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .btnsSection {
+        float: left;
+        padding: 0 20px;
+        width: 93%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+    }
+
+    /* .accountBtnSection {
+            margin-right: 30px;
+        } */
+
+    .headerSearchIcon {
+        display: none !important;
+    }
+
+    .addListBtn {
+        height: 95%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1250px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        background-color: black;
+        display: block;
+        height: 8.0rem;
+    }
+
+    .menuBars {
+        float: left;
+        margin-top: 2.0rem;
+    }
+
+    .btnsSection {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        padding: 12px;
+        margin-right: 5.0rem;
+    }
+
+    .addListBtn {
+        height: 95%;
+        margin-top: 0.5rem;
+    }
+}
+
+.logo {
+    width: 129px;
+    height: 40px;
+
+}
+
+.searchIcon {
+    font-size: 3.0rem !important;
+    left: 802.61px;
+    margin: auto;
+    color: white;
+    margin-right: 2.8rem;
+}
+
+.menuDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuItems {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2.8rem;
+    left: 59.55px;
+    right: 520.39px;
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.addListBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    padding: 1.5rem;
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
+    left: 857.61px;
+    top: 25px;
+    background: rgba(141, 153, 174, 0.8);
+    border-radius: 3px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regAndLogin {
+    margin: auto;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    left: 1048.58px;
+}
+
+.countrySelect {
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+    border: none;
+    right: 0;
+}
+
+.heroSelect {
+    width: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #8d99ae;
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width:0px) and (max-width:520px) {
+    .heroSection {
+        background-image: url('./assets/mobile-hero-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: in;
+    }
+
+    .heroHeading {
+        float: left;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding: 3.0rem;
+    }
+
+    .heroHeading p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin: 12px 0 0;
+    }
+
+    .heroList {
+        padding: 5%;
+    }
+
+    .heroList li {
+        list-style: none;
+        background-color: white;
+        font-family: Roboto;
+        font-size: 14px;
+        color: #8d99ae;
+        padding: 2.0rem;
+        text-align: left;
+    }
+
+    .btnListItem {
+        padding: 0% !important;
+    }
+
+    .searchBtn {
+        width: 100%;
+        height: 5.7rem;
+        border: none;
+        outline: none;
+        font-family: Oswald;
+        font-size: 21px;
+        color: white;
+        background-color: #d90429;
+    }
+
+    .searchBtnIcon {
+        margin-right: 0.8rem;
+    }
+
+    .keywordDownArrow {
+        float: right;
+    }
+
+}
+
+@media screen and (min-width:521px) and (max-width:980px) {
+    .heroSection {
+        background-image: url('./assets/mobile-hero-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+    }
+
+    .heroHeading {
+        float: left;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        font-family: 'Oswald';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding: 3.0rem;
+    }
+
+    .heroHeading p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin: 12px 0 0;
+    }
+
+    .herolistSection {
+        margin: 5%;
+    }
+
+    .heroList li {
+        list-style: none;
+        background-color: white;
+        font-family: Roboto;
+        font-size: 14px;
+        color: #8d99ae;
+        padding: 2.0rem;
+        text-align: left;
+        display: table;
+        float: left;
+        margin: auto;
+        width: 40%;
+    }
+
+    .keyworkLi {
+        padding-right: 1.8rem !important;
+        padding-bottom: 2.2rem !important;
+    }
+
+    .keyworkLi::before {
+        background: #dce2e4 none repeat scroll 0 0;
+        content: "";
+        height: 28px;
+        margin-top: -14px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1px;
+    }
+
+    .selectList {
+        padding: 1.9rem !important;
+    }
+
+    .btnListItem {
+        padding: 0% !important;
+    }
+
+    .searchBtn {
+        width: calc(100% + 4.0rem);
+        height: 5.7rem;
+        border: none;
+        outline: none;
+        font-family: Oswald;
+        font-size: 21px;
+        color: white;
+        background-color: #d90429;
+    }
+
+    .searchBtnIcon {
+        margin-right: 0.8rem;
+    }
+
+}
+
+#slider {
+    display: none;
+}
+
+@media screen and (min-width:981px) {
+    .heroSection {
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+    }
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        20% {
+            left: 0%;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    div#slider {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        height: 70rem !important;
+        top: 0px;
+        z-index: -1;
+    }
+
+    div#slider figure img {
+        width: 20%;
+        float: left;
+    }
+
+    div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+
+    .heroHeading {
+        float: left;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.5rem;
+        color: #FFFFFF;
+        padding: 3.0rem;
+    }
+
+    .herolistSection {
+        z-index: 1;
+    }
+
+    .heroHeading p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin: 12px 0 0;
+    }
+
+    .herolistSection {
+        margin: 5%;
+        margin-right: 15%;
+        margin-left: 12%;
+    }
+
+    .heroList li {
+        list-style: none;
+        background-color: white;
+        font-family: Roboto;
+        font-size: 14px;
+        color: #8d99ae;
+        width: 22.5%;
+
+        padding-top: 2.0rem;
+        padding-bottom: 2.0rem;
+        text-align: left;
+        display: table;
+        float: left;
+        margin: auto;
+    }
+
+    .keyworkLi {
+        border-radius: 5.0rem 0 0 5.0rem;
+        text-align: center !important;
+    }
+
+    .selectList {
+        padding: 1.9rem !important;
+    }
+
+    .locationList {
+        padding-top: 1.8rem !important;
+    }
+
+    .btnListItem {
+        padding: 0% !important;
+    }
+
+    .searchBtn {
+        width: calc(100% + 4.0rem);
+        height: 5.7rem;
+        border: none;
+        outline: none;
+        font-family: Oswald;
+        font-size: 21px;
+        color: white;
+        background-color: #d90429;
+        border-radius: 0 5.0rem 5.0rem 0;
+    }
+
+    .searchBtnIcon {
+        margin-right: 0.8rem;
+    }
+}
