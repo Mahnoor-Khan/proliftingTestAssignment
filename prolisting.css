@@ -99,13 +99,6 @@ nav {
     margin-right: 0.8rem !important;
 }
 
-/* .check {
-    flex-direction: column;
-    padding: 2.0rem;
-    margin-top: 4.0rem;
-    z-index: 9;
-} */
-
 .listing:hover .listingDropdown {
     display: flex;
     flex-direction: column;
