@@ -7,7 +7,8 @@
     <link href="./prolisting.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <title>Document</title>
+    
+    <title>Prolifting</title>
 </head>
 <body>
     <nav>
@@ -73,10 +74,10 @@
         </button>
         <div class="regAndLogin"><span>REGISTER</span>/ <span>LOGIN</span></div>
         <select class="countrySelect">
-            <option value="1">EN</option>
-            <option value="2">TK</option>
-            <option value="3">RA</option>
-            <option value="4">PK</option>
+            <option class="countrySelectoption" value="1">EN</option>
+            <option class="countrySelectoption" value="2">TK</option>
+            <option class="countrySelectoption" value="3">RA</option>
+            <option  class="countrySelectoption"value="4">PK</option>
         </select>
     </div>
     </nav>
@@ -96,12 +97,12 @@
     <div class="heroSection">
         <div id="slider">
             <figure>
-            <img src="./assets/img-1.png" alt>
-            <img src="./assets/img-2.png" alt>
-            <img src="./assets/img-3.png" alt>
-            <img src="./assets/img-4.png" alt>
-            <img src="./assets/img-5.png" alt>
-            <img src="./assets/img-6.png" alt>
+            <img class="sliderImg" src="./assets/img-1.png" alt>
+            <img class="sliderImg" src="./assets/img-2.png" alt>
+            <img class="sliderImg" src="./assets/img-3.png" alt>
+            <img class="sliderImg" src="./assets/img-4.png" alt>
+            <img class="sliderImg" src="./assets/img-5.png" alt>
+            <img class="sliderImg" src="./assets/img-6.png" alt>
             </figure>
             </div>
         <div class="heroHeading">
@@ -113,9 +114,9 @@
         
     <div class="herolistSection">
         <ul class="heroList">
-            <li class="keyworkLi">Keywords</li>
-            <li class="locationList">
-                <select class="heroSelect">
+            <li class="keyworkLi divider"><span class="keywordInput">Keywords</span></li>
+            <li class="locationList divider">
+                <select class="heroSelect select">
                     <option href="">All Locations</option>
                     <option href="">United States</option>
                     <option href="">United Kingdom</option>
@@ -124,8 +125,8 @@
                     <option href="">Albania</option>
                 </select>
             </li>   
-            <li class="selectList">
-                <select class="heroSelect">
+            <li class="selectList divider">
+                <select class="heroSelect select">
                     <option href="">All Categories</option>
                     <option href="">Foods</option>
                     <option href="">Lodging</option>
@@ -137,6 +138,28 @@
             <li class="btnListItem"><button class="searchBtn"><i class="fa fa-search searchBtnIcon"></i>SEARCH</button></li> 
         </ul>
     </div>
+    <div class="iconsSection">
+        <div class="iconAndText">
+            <img class="icons" src="./assets/car-icon.png"/>
+            <span class="iconText">Cars</span>
+        </div>
+        <div class="iconAndText">
+            <img class="icons" src="./assets/spoon-icon.png"/>
+            <span class="iconText">Foods & Drinks</span>
+        </div>
+        <div class="iconAndText">
+            <img class="icons" src="./assets/plane-icon.png"/>
+            <span class="iconText">Travels</span>
+        </div>
+        <div class="iconAndText">
+        <img class="icons" src="./assets/bag-icon.png"/>
+            <span class="iconText">Business</span>
+        </div>
+        <div class="iconAndText">
+        <img class="icons" src="./assets/cart-icon.png"/>
+            <span class="iconText">Shoppings</span>
+        </div>
     </div>
+</div>
 </body>
 </html>
